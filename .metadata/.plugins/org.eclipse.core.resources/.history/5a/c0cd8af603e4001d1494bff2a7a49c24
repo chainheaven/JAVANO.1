@@ -1,0 +1,28 @@
+package tw.org.iii.tutor;
+
+import java.io.FileInputStream;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+
+import tw.org.iii.classes.Student;
+
+public class TEST60 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			ObjectInputStream oin = new ObjectInputStream(new FileInputStream("dir1/s1"));
+
+			Object obj = oin.readObject();
+
+			if (obj instanceof Student) {
+				Student s2 = (Student) obj;
+				System.out.println(s2.sum() + ":" + s2.avg());
+			}
+			oin.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}

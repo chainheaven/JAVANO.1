@@ -1,0 +1,18 @@
+package tw.org.iii.tutor;
+
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+public class TEST63 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+		DatagramSocket socket = new DatagramSocket();
+socket.close();
+System.out.println("OK");
+	}catch(SocketException e) {
+		System.out.println(e);
+	}
+
+}

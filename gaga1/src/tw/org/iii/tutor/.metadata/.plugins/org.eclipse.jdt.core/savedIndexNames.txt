@@ -1,0 +1,1 @@
+INDEX VERSION 1.132+C:\Users\chain\eclipse-workspace\gaga1\src\tw\org\iii\tutor\.metadata\.plugins\org.eclipse.jdt.core

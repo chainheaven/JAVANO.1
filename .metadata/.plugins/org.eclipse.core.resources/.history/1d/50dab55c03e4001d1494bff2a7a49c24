@@ -1,0 +1,19 @@
+package tw.org.iii.tutor;
+
+import java.io.FileInputStream;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+
+public class TEST60 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			ObjectInputStream oin = new ObjectInputStream(new FileInputStream("dir1/s1"));
+			oin.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}

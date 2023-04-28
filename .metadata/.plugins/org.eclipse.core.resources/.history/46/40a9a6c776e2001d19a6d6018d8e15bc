@@ -1,0 +1,22 @@
+package tw.org.iii.tutor;
+
+import javax.swing.JFrame;
+
+public class MySign extends JFrame {
+
+	private MyDrawer myDrawer;
+
+	public MySign() {
+		myDrawer = new MyDrawer();
+		super("簽名");
+		setSize(800, 640);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new MySign();
+	}
+
+}

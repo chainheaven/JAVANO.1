@@ -1,0 +1,21 @@
+package tw.org.iii.tutor;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class TEST65 {
+
+	public static void main(String[] args) {
+		try {
+			ServerSocket server = new ServerSocket(9957);
+			Socket socker = server.accept();
+			server.close();
+			System.out.println("OK");
+		} catch (IOException e) {
+			System.out.println(e);
+		}
+
+	}
+
+}

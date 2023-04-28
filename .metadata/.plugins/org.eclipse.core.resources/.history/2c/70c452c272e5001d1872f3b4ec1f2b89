@@ -1,0 +1,17 @@
+package tw.org.iii.tutor;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+
+public class TEST65 {
+
+	public static void main(String[] args) {
+		try {
+			ServerSocket server = new ServerSocket(9957);
+		} catch (IOException e) {
+			System.out.println();
+		}
+
+	}
+
+}

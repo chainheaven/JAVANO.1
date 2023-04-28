@@ -1,0 +1,19 @@
+package tw.org.iii.tutor;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+import javax.tools.FileObject;
+
+public class TEST53 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try{String data = "Hello , World";
+		FileOutputStream fout = new FileOutputStream("dir1/file2.txt");
+	}catch(FileNotFoundException e) {
+		e.printStackTrace()	;
+	}
+
+}

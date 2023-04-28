@@ -1,0 +1,24 @@
+package tw.org.iii.tutor;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+public class TEST55 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+
+			FileOutputStream fout = new FileOutputStream("dir2/brad.jpg");
+			FileInputStream fin = new FileInputStream("dir1/kitty.jpg");
+			int b;
+			while ((b = fin.read()) != -1) {
+
+			}
+			fin.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+}

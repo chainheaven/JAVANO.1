@@ -1,0 +1,22 @@
+package tw.org.iii.tutor;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+import tw.org.iii.classes.Student;
+
+public class TEST59 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Student s1 = new Student("Brad", 52, 43, 64);
+		System.out.println(s1.sum() + ":" + s1.avg());
+
+		try {
+		FileOutputStream fout = new FileOutputStream("dir1/s1");
+		}catch(FileNotFoundException e) {
+			System.out.println(e);
+		}
+
+}

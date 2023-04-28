@@ -1,0 +1,37 @@
+package tw.org.iii.tutor;
+
+public class Timerr extends Thread {
+	private long startTime;
+	private long endTime;
+	private boolean isRunning;
+	Timerr myTimer = new Timerr();
+
+	public void startTimer() {
+		startTime = System.currentTimeMillis();
+		isRunning = true;
+		start();
+	}
+
+	public void stopTimer() {
+		endTime = System.currentTimeMillis();
+		isRunning = false;
+	}
+
+	public long getTimeElapsed() {
+		if (isRunning) {
+			return System.currentTimeMillis() - startTime;
+		} else {
+			return endTime - startTime;
+		}
+	}
+
+	public void run() {
+		while (isRunning) {
+			try {
+				Thread.sleep(1000); // 每秒钟更新时间
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

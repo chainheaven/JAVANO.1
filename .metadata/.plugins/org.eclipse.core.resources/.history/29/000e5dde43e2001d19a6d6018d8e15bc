@@ -1,0 +1,16 @@
+package tw.org.iii.tutor;
+
+public class TEST30 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Test301 {
+	void m1() {
+		System.out.println("Test301:m1()");
+	}
+}

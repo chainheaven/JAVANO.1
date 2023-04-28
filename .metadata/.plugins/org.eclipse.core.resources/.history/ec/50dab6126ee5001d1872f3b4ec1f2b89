@@ -1,0 +1,22 @@
+package tw.org.iii.tutor;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+
+public class TEST64 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte[] buf = new byte[1024];
+		try {
+			DatagramSocket socket = new DatagramSocket(174);
+			DatagramPacket packet = new DatagramPacket(buf, buf.length);
+			socket.receive(packet);
+			String urip = packet.getAddress().getHostAddress();
+			System.out.println("receive ok");
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+}

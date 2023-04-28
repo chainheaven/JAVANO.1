@@ -1,0 +1,51 @@
+package tw.org.iii.tutor;
+
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.DebugGraphics;
+import javax.swing.JPanel;
+
+public class MyDrawer extends JPanel {
+	public MyDrawer() {
+		setBackground(Color.yellow);
+		MyListener myListener = new MyListener();
+		addMouseListener(myListener);
+		addMouseMotionListener(myListener);
+	}
+
+	@Override
+	public void paintComponents(Graphics g) {
+		// TODO Auto-generated method stub
+		super.paintComponents(g);
+
+//		if (g instanceof DebugGraphics) {
+//			System.out.println("A");
+//
+//		} else if (g instanceof Graphics2D) {
+//			System.out.println("B");
+//		}
+
+		Graphics2D g2d = (Graphics2D) g;
+		g2d.setColor(Color.BLUE);
+		g2d.setStroke(new BasicStroke(4));
+		g2d.drawLine(0, 0, 200, 300);
+	}
+
+	private class MyListener extends MouseAdapter {
+		@Override
+		public void mousePressed(MouseEvent e) {
+			System.out.println("press:" + e.getX() + "," + e.getY());
+		}
+
+		@Override
+		public void mouseDragged(MouseEvent e) {
+			System.out.println("drag:" + e.getX() + "," + e.getY());
+		}
+
+	}
+}

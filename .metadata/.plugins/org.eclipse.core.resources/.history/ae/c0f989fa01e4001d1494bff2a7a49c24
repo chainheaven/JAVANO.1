@@ -1,0 +1,13 @@
+package tw.org.iii.tutor;
+
+import tw.org.iii.classes.Student;
+
+public class TEST59 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Student s1 = new Student("Brad", 52, 43, 64);
+	}
+
+}

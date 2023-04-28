@@ -1,0 +1,21 @@
+package tw.org.iii.tutor;
+
+import java.awt.event.ActionListener;
+
+public class TEST32 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public class Test32 extends JFrame {
+		private JButton b1, b2, b3;
+	}
+
+	public Test32() {
+		b1 = new JButton("B1");b2 = new JButton("B2");B
+	}
+
+	class MyListener implements ActionListener
+}

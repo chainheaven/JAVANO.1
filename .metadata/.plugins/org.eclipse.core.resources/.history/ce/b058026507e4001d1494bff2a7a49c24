@@ -1,0 +1,28 @@
+package tw.org.iii.tutor;
+
+public class TEST61 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Test611 {
+	Test611() {
+		System.out.println("Test611()");
+	}
+}
+
+class Test612 extends Test611 {
+	Test612() {
+		System.out.println("Test612()");
+	}
+}
+
+class Test613 extends Test611 {
+	Test613() {
+		System.out.println("Test613()");
+	}
+}

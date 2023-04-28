@@ -1,0 +1,13 @@
+package tw.org.iii.tutor;
+
+import java.io.File;
+
+public class TEST46 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File file1 = new File("");
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package tw.org.iii.tutor;
+
+import java.net.ServerSocket;
+
+public class TEST65 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ServerSocket server = new ServerSocket(9957);
+
+	}
+
+}

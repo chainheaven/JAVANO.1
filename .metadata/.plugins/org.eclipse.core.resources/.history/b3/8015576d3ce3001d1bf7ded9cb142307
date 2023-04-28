@@ -1,0 +1,34 @@
+package tw.org.iii.tutor;
+
+import java.awt.FontFormatException;
+import java.io.FileNotFoundException;
+
+import javax.management.RuntimeErrorException;
+
+public class TEST44 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try{new Test441().m3();}catch(Ex)
+	}
+}
+
+class Test441 {
+	void m1() throws Exception {
+		m2();
+	}
+
+	void m2() throws Exception {
+		m3();
+
+	}
+
+	void m3(int a) throws FontFormatException, FileNotFoundException {
+		if (a > 0) {
+			throw new FontFormatException(null);
+		} else {
+			throw new FileNotFoundException();
+		}
+
+	}
+}

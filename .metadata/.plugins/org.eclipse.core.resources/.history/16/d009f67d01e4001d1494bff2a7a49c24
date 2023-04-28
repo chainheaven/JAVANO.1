@@ -1,0 +1,6 @@
+package tw.org.iii.classes;
+
+public class Student {
+	private String name;
+	private int ch, eng, math;
+}

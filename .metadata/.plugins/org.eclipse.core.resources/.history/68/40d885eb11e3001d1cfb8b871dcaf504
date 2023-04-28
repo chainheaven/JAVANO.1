@@ -1,0 +1,42 @@
+package tw.org.iii.tutor;
+
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class MySign extends JFrame {
+
+	private MyDrawer myDrawer;
+	private JButton clear, undo, redo;
+
+	public MySign() {
+		super("簽名");
+
+		myDrawer = new MyDrawer();
+		setLayout(new BorderLayout());
+		add(myDrawer, BorderLayout.CENTER);
+
+		setSize(800, 640);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+		clear = new JButton("Clear");
+		undo = new JButton("Undo");
+		redo = new JButton("Redo");
+
+		JPanel top = new JPanel(new FlowLayout());
+		top.add(clear);
+		top.add(undo);
+		top.add(redo);
+		add(top, BorderLayout.NORTH);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new MySign();
+	}
+
+}

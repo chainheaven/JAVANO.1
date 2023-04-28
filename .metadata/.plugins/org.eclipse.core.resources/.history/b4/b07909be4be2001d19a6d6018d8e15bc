@@ -1,0 +1,23 @@
+package tw.org.iii.tutor;
+
+public class TEST31 {
+	public static void main(String[] args) {
+
+	}
+}
+
+interface Shape {
+	int length(); // public abstract
+
+	double area();
+}
+
+class RecShape implements Shape {
+	public int length() {
+		return 1;
+	}
+
+	public double area() {
+		return 0;
+	}
+}

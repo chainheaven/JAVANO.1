@@ -1,0 +1,22 @@
+package tw.org.iii.tutor;
+
+public class TEST28 {
+
+	public static void main(String[] args) {
+		TEST281 obj1 = new TEST281(2);
+		TEST282 obj2 = new TEST282();
+	}
+
+}
+
+class TEST281 extends Object {
+	TEST281(int a) {
+		// super();
+	}
+}
+
+class TEST282 extends TEST281 {
+	TEST282() {
+		super(3);
+	}
+}

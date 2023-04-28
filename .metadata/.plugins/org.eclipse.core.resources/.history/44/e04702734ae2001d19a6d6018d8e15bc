@@ -1,0 +1,17 @@
+package tw.org.iii.tutor;
+
+public class TEST31 {
+	public static void main(String[] args) {
+
+	}
+}
+
+interface Shape {
+	int length();
+
+	double area();
+}
+
+class RecShape {
+
+}

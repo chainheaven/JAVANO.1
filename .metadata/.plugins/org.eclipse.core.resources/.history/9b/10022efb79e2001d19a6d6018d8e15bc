@@ -1,0 +1,16 @@
+package tw.org.iii.tutor;
+
+import java.awt.Color;
+import java.awt.event.MouseAdapter;
+
+import javax.swing.JPanel;
+
+public class MyDrawer extends JPanel {
+	public MyDrawer() {
+		setBackground(Color.yellow);
+	}
+
+	private class MyListener extends MouseAdapter {
+
+	}
+}

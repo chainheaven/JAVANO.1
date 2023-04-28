@@ -1,0 +1,44 @@
+package tw.org.iii.tutor;
+
+import tw.org.iii.classes.*;
+
+public class TEST24 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = "TEST";
+		String s2 = s1.concat("Chao");
+		String s3 = s1.replace('a', 'A');
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+
+		System.out.println("---");
+
+		int a = 10, b = 3;
+		System.out.println(a == b);
+		String str1 = "TEST";
+		String str2 = "TEST";
+		System.out.println(str1 == str2);
+		String str3 = new String("TEST");
+		String str4 = new String("TEST");
+		System.out.println(str3 == str4);
+
+		System.out.println("---");
+
+		Bike b1 = new Bike();
+		Bike b2 = new Bike();
+		System.out.println(b1);
+		System.out.println(b2);
+		System.out.println("---");
+
+		System.out.println(b1 == b2);
+		b1.upSpeed();
+		b1.upSpeed();
+		b1.upSpeed();
+		b1.upSpeed();
+		System.out.println(b1.getSpeed());
+
+	}
+
+}

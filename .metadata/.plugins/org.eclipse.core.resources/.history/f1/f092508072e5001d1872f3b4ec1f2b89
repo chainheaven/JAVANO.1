@@ -1,0 +1,19 @@
+package tw.org.iii.tutor;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+
+public class TEST65 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			ServerSocket server = new ServerSocket(9957);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

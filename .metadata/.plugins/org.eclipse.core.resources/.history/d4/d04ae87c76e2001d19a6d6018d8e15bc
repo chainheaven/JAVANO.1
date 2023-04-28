@@ -1,0 +1,10 @@
+package tw.org.iii.tutor;
+
+import javax.swing.JPanel;
+
+public class MyDrawer extends JPanel {
+	public MyDrawer() {
+
+	}
+
+}

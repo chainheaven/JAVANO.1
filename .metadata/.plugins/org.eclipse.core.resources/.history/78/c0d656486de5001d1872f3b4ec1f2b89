@@ -1,0 +1,17 @@
+package tw.org.iii.tutor;
+
+import java.net.DatagramSocket;
+
+public class TEST64 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		try {
+			DatagramSocket socket = new DatagramSocket(8888);
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+}

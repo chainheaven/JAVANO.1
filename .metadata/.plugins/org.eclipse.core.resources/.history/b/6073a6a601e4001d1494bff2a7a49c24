@@ -1,0 +1,14 @@
+package tw.org.iii.classes;
+
+public class Student {
+	private String name;
+	private int ch, eng, math;
+
+	public Student(String name, int ch, int eng, int math) {
+		this.name = name;
+		this.ch = ch;
+		this.eng = eng;
+		this.math = math;
+
+	}
+}

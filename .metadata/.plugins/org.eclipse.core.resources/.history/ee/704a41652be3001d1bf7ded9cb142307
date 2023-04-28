@@ -1,0 +1,16 @@
+package tw.org.iii.tutor;
+
+import java.util.HashMap;
+
+public class TEST40 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<String, Object> map = new HashMap<>();
+		map.put("name", "Test");
+		map.put("gender", true);
+		map.put("age", 18);
+		System.out.println(map.get("gender"));
+	}
+
+}

@@ -1,0 +1,34 @@
+package tw.org.iii.tutor;
+
+public class TEST30 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Test301 obj2 = new Test302();
+		Test301 obj3 = new Test303();
+		obj2.m2();
+		obj3.m2();
+	}
+
+}
+
+abstract class Test301 {
+	void m1() {
+		System.out.println("Test301:m1()");
+	}
+
+	abstract void m2();
+
+}
+
+class Test302 extends Test301 {
+	void m2() {
+		System.out.println("Test302:m2()");
+	}
+}
+
+class Test303 extends Test301 {
+	void m2() {
+		System.out.println("Test303:m2()");
+	}
+}

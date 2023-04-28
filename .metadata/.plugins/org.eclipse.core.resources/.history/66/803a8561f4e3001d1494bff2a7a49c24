@@ -1,0 +1,21 @@
+package tw.org.iii.tutor;
+
+import java.io.FileInputStream;
+
+public class TEST55 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+
+		FileInputStream fin = new FileInputStream("dir1/kitty.jpg");
+		int b;
+		while((b = fin.read())!=-1) {
+			
+		}
+				fin.close()	;
+	}catch(Exception e) {
+		System.out.println(e);
+	}
+
+}

@@ -1,0 +1,27 @@
+package tw.org.iii.tutor;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+public class TEST55 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			long start = System.currentTimeMillis();
+			FileOutputStream fout = new FileOutputStream("dir2/TEST.jpg");
+			FileInputStream fin = new FileInputStream("dir11/kitty.jpg");
+			int b;
+			while ((b = fin.read()) != -1) {
+				fout.wait(b);
+			}
+			fin.close();
+			fout.flush();
+			fout.close();
+			System.out.println("finish:" + (System.currentTimeMillis() - start));
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+}

@@ -1,0 +1,38 @@
+package tw.org.iii.tutor;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+import javax.imageio.plugins.tiff.ExifParentTIFFTagSet;
+
+public class TEST61 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+			try {
+				ObjectOutputStream oout = new ObjectOutputStream(new FileOutputStream(null))
+						oout.writeObject(obj);
+				oout.flush();oout.close();
+			}catch(Ex)
+	}
+
+}
+
+class Test611 {
+	Test611() {
+		System.out.println("Test611()");
+	}
+}
+
+class Test612 extends Test611 {
+	Test612() {
+		System.out.println("Test612()");
+	}
+}
+
+class Test613 extends Test612 {
+	Test613() {
+		System.out.println("Test613()");
+	}
+}
